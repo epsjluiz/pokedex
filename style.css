@@ -1,0 +1,98 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: Arial, sans-serif; background-color: #f0f0f0; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+h1 { text-align: center; margin-bottom: 20px; color: #333; }
+
+.search-container { text-align: center; margin-bottom: 20px; }
+
+#search {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.pokemon-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.pokemon-card:hover { transform: translateY(-5px); }
+
+.pokemon-card img { width: 120px; height: 120px; }
+
+.pokemon-card h3 {
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+.types {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.type {
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.load-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.load-more:hover {
+    background-color: #2980b9;
+}
+
+.load-more:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Remover as classes .stats e suas estilizações */
+/* Manter apenas as cores dos tipos */
+.type.grass, .grass { background-color: #3dd930; }
+.type.fire, .fire { background-color: #ff4422; }
+.type.water, .water { background-color: #3399ff; }
+.type.electric, .electric { background-color: #ffcc00; }
+.type.ice, .ice { background-color: #77ddff; }
+.type.fighting, .fighting { background-color: #bb2222; }
+.type.poison, .poison { background-color: #aa22aa; }
+.type.ground, .ground { background-color: #ddbb55; }
+.type.flying, .flying { background-color: #8899ff; }
+.type.psychic, .psychic { background-color: #ff5599; }
+.type.bug, .bug { background-color: #aabb22; }
+.type.rock, .rock { background-color: #bbaa66; }
+.type.ghost, .ghost { background-color: #6666bb; }
+.type.dragon, .dragon { background-color: #7766ee; }
+.type.dark, .dark { background-color: #775544; }
+.type.steel, .steel { background-color: #aaaabb; }
+.type.fairy, .fairy { background-color: #ff99aa; }
+.type.normal, .normal { background-color: #aaaa99; }
